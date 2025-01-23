@@ -17,11 +17,15 @@ If you're ready to dive in, here’s a quick setup guide to get you going:
    ```bash
    poetry shell
    ```
-4. Install development (and/or docs) dependencies:
+   or if using `Poetry >= v2.0`:
+   ```bash
+   poetry env use python
+   ```
+5. Install development (and/or docs) dependencies:
    ```bash
    poetry install --only dev,docs --no-root
    ```
-5. Install the package(s) you want to work on. You will for sure need to install `llama-index-core`:
+6. Install the package(s) you want to work on. You will for sure need to install `llama-index-core`:
 
    ```bash
    pip install -e llama-index-core
